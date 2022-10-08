@@ -20,7 +20,7 @@ export default class Navbar extends Component {
           <li>
             {/* brand name */}
             <Link to="/" className="nav-link">
-              MOBILE SHOP / E-COMMERCE
+              E-COMMERCE Web App
             </Link>
           </li>
         </ul>
@@ -31,9 +31,18 @@ export default class Navbar extends Component {
             <span className="mr-2">
               <i className="fas fa-cart-plus" />
             </span>
+            Home
+          </ButtonContainer>
+        </Link>
+        <Link to="/cart" className="ml-auto">
+          <ButtonContainer>
+            <span className="mr-2">
+              <i className="fas fa-cart-plus" />
+            </span>
             my cart
           </ButtonContainer>
         </Link>
+
       </NavWrapper>
     );
   }
